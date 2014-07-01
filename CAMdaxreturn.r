@@ -1,6 +1,6 @@
 ##### CAMdaxreturn yafei.xu@hu-berlin.de
 
-# read data dax140624.csv fromhttps://raw.githubusercontent.com/YafeiXu/CAM/master/DAX19902014.csv
+# read data dax140624.csv from https://raw.githubusercontent.com/YafeiXu/CAMquantlet/master/DAX19902014.csv
 # replace the path of the working directory if necessary
 setwd("C:/R")
 d=read.csv("dax140624.csv")
