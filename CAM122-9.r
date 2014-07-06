@@ -22,22 +22,23 @@ r=DAXreturn[-which(DAXreturn>=6.5|DAXreturn<=-6.5)]
 # kernel density, normal samples and t samples
 epaDensity=density(r, bw = "nrd0", adjust = 1,
         kernel = c("epanechnikov"))
-dNorm=density(r, bw = "nrd0", adjust = 1,
-        kernel = c("gaussian"))
-dT=dt(sort(r), df=5)
-		
+#dNorm=density(r, bw = "nrd0", adjust = 1,
+#        kernel = c("gaussian"))
+#dT=dt(sort(r), df=5)
+
+dNorm=dnorm(seq(-6.5,6.5,length.out=length(r)), sd=1.4)
+dT=dt(seq(-6.5,6.5,length.out=length(r)), df=.6)		
+
 # do plot
-hist1=hist(r, prob=TRUE, 12,main="Histogram of DAX Return",col="Blue",freq=F,breaks = 24) 
+hist1=hist(r, prob=TRUE, 12,main="Histogram of DAX Return",col="lightblue",freq=F,breaks = 24) 
 
 # kernel density estimation
-plot(dNorm, col="Red", lwd=2, ylab="Density", xlab="R")
+
+plot(epaDensity, col="Blue", lwd=2,xlab="R",ylab="Density", main="The estimated density of DAX returns")
+plot(hist1, col=rgb(0,0,1,1/4), xlim=c(-6,6),freq=F, add=T) 
+
+lines(seq(-6.5,6.5,length.out=length(r)),dNorm, col="Red", lwd=2)
 lines(seq(-6.5,6.5,length.out=length(r)),dT, col="Green", lwd=2)
-
-lines(epaDensity, col="Blue", lwd=2)
-
-plot( hist1, col=rgb(0,0,1,1/4), xlim=c(-6,6),freq=F, add=T) 
-
-
 box()
 
 ##
