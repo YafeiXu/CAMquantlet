@@ -1,11 +1,10 @@
 ##### CAM117-5 yafei.xu@hu-berlin.de
 
 
-# read data dax140624.csv from https://raw.githubusercontent.com/YafeiXu/CAMquantlet/master/dax140624.csv
+# data set is in the pool https://github.com/YafeiXu/CAMquantlet
 # replace the path of the working directory if necessary
 setwd("C:/R")
-d=read.csv("dax140624.csv")
-#d=read.csv("C:/Users/up2mike/Documents/GitHub/CAMquantlet/dax140624.csv") # 此处需要替换
+d = read.csv("dax140624.csv") # pls download the pertinent data set.
 DateInput=as.Date(d[,1])
 numOfDate=as.numeric(as.Date(c(DateInput)))
 newDF=data.frame(d,numOfDate)
