@@ -43,7 +43,7 @@ box()
 axis(1, at = At, labels = F)
 axis(2, at = seq(min(newDF[, 2]), max(newDF[, 2]), length.out = 13)) 
 mtext(expression(P[t]), side = 2, line = 2.7, at = seq(min(newDF[, 2]), max(newDF[, 2]), length.out = 13)[7], font = 2, cex = 1)  
-mtext("Date", side = 1, line = 2.7, at = 2401, font = 2, cex = 1) 
+mtext("Date", side = 1, line = 2.7, at = 2800, font = 2, cex = 1) 
 text(cex = 1, x = At-150, y = 200, dateC, xpd = TRUE, srt = 45) 
 
 # time series plot
