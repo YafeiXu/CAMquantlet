@@ -56,7 +56,7 @@ box()
 axis(1, at = At, labels = F)
 axis(2, at = seq(min(DAXreturn), max(DAXreturn), length.out = 13)) 
 mtext(expression(P[t]),  side = 2,  line = 2.7,  at = seq(min(DAXreturn), max(DAXreturn), length.out = 13)[7], font = 2, cex = 1)  
-mtext("Date", side = 1, line = 2.7, at = 2401, font = 2, cex = 1) 
+mtext("Date", side = 1, line = 2.7, at = 2800, font = 2, cex = 1) 
 text(cex = 1, x = At-80, y = -16.3, dateC, xpd = TRUE, srt = 45) 
 # time series plot
 lines(1:length(DAXreturn), DAXreturn, pch = 1, lty = 1, col = "blue", lwd = 1) 

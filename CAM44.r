@@ -19,7 +19,7 @@ x3 = qnorm(U[, 3])
 d = data.frame(x1, x2, x3)
 
 # do plot
-s3d = scatterplot3d(d[, 1], d[, 2], d[, 3], main = "Hierarchical Archimedean Copula", pch = 16, zlab = "x3", ylab = "x2", xlab = "x1")
+s3d = scatterplot3d(d[, 1], d[, 2], d[, 3], main = "Hierarchical Archimedean Copula", pch = 16, zlab = "", ylab = "", xlab = "")
 s3d$points3d(d[, 1], d[, 2], d[, 3], col = "red", pch = 16)
 s3d$points3d(d[, 1], d[, 2], seq(min(floor((d[, 3]))), min(floor((d[, 3]))), length.out = length(d[, 3])), col = "lightblue", pch = 16)
 s3d$points3d(seq(min(floor((d[, 1]))), min(floor((d[, 1]))), length.out = length(d[, 3])), d[, 2], d[, 3], col = "lightblue", pch = 16)
