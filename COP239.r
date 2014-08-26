@@ -1,4 +1,4 @@
-##### CAM239 - 12 yafei.xu@hu - berlin.de
+##### COP239 yafei.xu@hu - berlin.de
 
 library(copula)
 par(mfrow = c(4, 3))

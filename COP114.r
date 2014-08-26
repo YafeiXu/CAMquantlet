@@ -1,4 +1,4 @@
-##### CAM114-3 yafei.xu@hu-berlin.de
+##### COP114 yafei.xu@hu-berlin.de
 
 # read data dax140624.csv from https://raw.githubusercontent.com/YafeiXu/CAMquantlet/master/DAX19902014.csv
 # replace the path of the working directory if necessary

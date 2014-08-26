@@ -1,5 +1,4 @@
-##### CAM229-11 yafei.xu@hu-berlin.de
-
+##### COP229 yafei.xu@hu-berlin.de
 
 library(copula)
 par(mfrow = c(1, 3))

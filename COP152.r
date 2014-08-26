@@ -1,4 +1,4 @@
-##### CAM152 yafei.xu@hu-berlin.de
+##### COP152 yafei.xu@hu-berlin.de
 
 # data set is in the pool https://github.com/YafeiXu/CAMquantlet
 # replace the path of the working directory if necessary

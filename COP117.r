@@ -1,4 +1,4 @@
-##### CAM117-5 yafei.xu@hu-berlin.de
+##### COP117 yafei.xu@hu-berlin.de
 
 
 # data set is in the pool https://github.com/YafeiXu/CAMquantlet
